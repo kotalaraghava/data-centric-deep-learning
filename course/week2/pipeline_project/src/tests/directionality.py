@@ -162,7 +162,7 @@ class MNISTDirectionalityTest(BaseTest):
       # 
       # Pseudocode:
       # --
-      # batch_metric = ...
+      batch_metric = (preds_raw == preds_transformed).sum().item()/ len(preds_transformed)
       # 
       # Type:
       # --
