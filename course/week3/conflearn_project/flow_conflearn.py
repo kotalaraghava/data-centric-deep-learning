@@ -156,6 +156,7 @@ class TrainIdentifyReview(FlowSpec):
       # Pseudocode:
       # --
       # Get train and test slices of X and y.
+      # split_x = 
       # Convert to torch tensors.
       # Create train/test datasets using tensors.
       # Create train/test data loaders from datasets.
@@ -256,7 +257,7 @@ class TrainIdentifyReview(FlowSpec):
     You do not need to complete anything in this function. However, look through the 
     code and make sure the operations and output make sense.
     """
-    outputs = []
+    outputs = []  
     for index in self.issues:
       row = self.all_df.iloc[index]
       output = {
